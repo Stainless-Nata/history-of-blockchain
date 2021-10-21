@@ -1,12 +1,12 @@
 // using d3 for convenience
-var container = d3.select('#scroll');
-var graphic = container.select('.scroll__graphic');
-var chart = graphic.select('.chart');
-var text = container.select('.scroll__text');
-var step = text.selectAll('.step');
+let container = d3.select('#scroll');
+let graphic = container.select('.scroll__graphic');
+let chart = graphic.select('.chart');
+let text = container.select('.scroll__text');
+let step = text.selectAll('.step');
 
 // initialize the scrollama
-var scroller = scrollama();
+let scroller = scrollama();
 
 // generic window resize listener event
 function handleResize() {
