@@ -39,7 +39,7 @@
 body {
   font-family: 'Noto Sans Mono', monospace;
   /* background-color: #c0ac92; */
-  background-color: #d4c4a6;
+  background-color: #d6c9b0;
 }
 /* scrolly */
 
@@ -52,7 +52,7 @@ body {
   padding: 1rem;
 }
 #scrolly {
-  background-color: rgba(192, 172, 146, 0.2);
+  background-color: #e0d0ba;
 }
 
 #scrolly > * {
@@ -110,4 +110,39 @@ article {
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
+}
+
+/* scatterplot */
+
+.dot {
+  cursor: pointer;
+}
+
+.dot:hover {
+  stroke-width: 2;
+}
+.tick {
+  font-size: 18px;
+  font-family: 'Noto Sans Mono', monospace;
+}
+/* .axis-label {
+  font-size: 24px;
+  fill: black;
+  text-anchor: middle; 
+} */
+div.tooltip {
+  position: absolute;
+  text-align: left;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+  font: 12px;
+  pointer-events: none;
+  background-color: white;
+  color: black;
+  border-color: black;
+  /* border-width: 1px; */
+  border-style: solid;
+  border-width: thin;
+  line-height: 1.2;
 }
