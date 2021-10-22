@@ -18,17 +18,14 @@ let state = {
 };
 
 // Load data
+Promise.all([
+  d3.csv('./data/draft6.csv', d3.autoType).then(raw_data => {
+    console.log('raw_data', raw_data, raw_data[0]);
+    state.data = raw_data;
 
-d3.csv('../data/draft5.csv', d => ({
-  Count: d.Count,
-  Type: d.Type,
-  Name: d.Name,
-})).then(raw_data => {
-  console.log('raw_data', raw_data, raw_data[0]);
-  state.data = raw_data;
-
-  init();
-});
+    init();
+  }),
+]);
 
 //INITIALIZING FUNCTION
 // this will be run one time when data finishes loading in
@@ -46,6 +43,7 @@ function init() {
     .domain(state.data.map(d => d.Type))
     .range([margin.top + 60, height - margin.bottom])
     .paddingInner(0);
+
   console.log(yScale.domain());
 
   // AXES
@@ -91,6 +89,18 @@ function init() {
 }
 
 function draw() {
+  //   svg
+  //     .selectAll('text')
+  //     .data(state.data, d => d.Name)
+  //     .join('text')
+  //     .attr('class', 'label')
+  //     // this allows us to position the text in the center of the bar
+  //     // .attr("y", d => yScale(d.activity))
+  //     // //.text(d => d.activity)
+  //     // .attr("x", d => xScale(d.count))
+  //     .text(d => d.Name)
+  //     .attr('dy', '1.8em');
+
   svg
     .selectAll('.dot')
 

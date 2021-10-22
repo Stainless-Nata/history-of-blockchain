@@ -1,0 +1,13 @@
+Count,Type,Name
+1,Cryptography,Ancient History
+1,Open_source,"""The Printer Story"""
+1,Decentralization,Arpanet
+2,Cryptography,Wartime
+2,Open_source,GNU
+2,Decentralization,Centrilized Computing
+3,Cryptography,RSA
+3,Open_source,Linux
+3,Decentralization,UNIX
+4,Cryptography,PGP
+4,Open_source,Git
+4,Decentralization,Bittorent
