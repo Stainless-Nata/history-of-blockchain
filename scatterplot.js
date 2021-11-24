@@ -2,7 +2,7 @@
 
 const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
-  margin = { top: 20, bottom: 50, left: 180, right: 0 },
+  margin = { top: 60, bottom: 50, left: 180, right: 0 },
   radius = 30;
 
 /** these variables allow us to access anything we manipulate in
@@ -41,8 +41,8 @@ function init() {
   yScale = d3
     .scaleBand()
     .domain(state.data.map(d => d.Type))
-    .range([margin.top + 60, height - margin.bottom])
-    .paddingInner(0);
+    .range([margin.top + 50, height - margin.bottom])
+    .paddingInner(10);
 
   console.log(yScale.domain());
 
@@ -56,7 +56,7 @@ function init() {
 
   // create an svg element in our main `d3-container` element
   svg = d3
-    .select('#d3-container')
+    .select('#sticky-thing')
     .append('svg')
     .attr('width', width)
     .attr('height', height);
@@ -95,9 +95,9 @@ function draw() {
   //     .join('text')
   //     .attr('class', 'label')
   //     // this allows us to position the text in the center of the bar
-  //     // .attr("y", d => yScale(d.activity))
-  //     // //.text(d => d.activity)
-  //     // .attr("x", d => xScale(d.count))
+  //     .attr('y', d => yScale(d.Type))
+  //     // .text(d => d.activity)
+  //     .attr('x', d => xScale(d.Count))
   //     .text(d => d.Name)
   //     .attr('dy', '1.8em');
 
@@ -111,13 +111,20 @@ function draw() {
         // enter selections -- all data elements that don't have a `.dot` element attached to them yet
         enter
           .append('circle')
-          .attr('class', 'dot') // Note: this is important so we can identify it in future updates
+          //.attr('class', 'dot')
+          .attr('class', d => `dot-${d.Step}`) // Note: this is important so we can identify it in future updates
           .attr('stroke', 'black')
           .attr('opacity', 1)
           .attr('r', radius)
           .attr('cx', d => xScale(d.Count))
           .attr('cy', d => yScale(d.Type))
           .attr('fill', '#e0d0ba')
+          //   .append('text')
+          //   .attr('class', 'text')
+          //   .attr('text', d => d.Name)
+          //   .attr('x', d => d.Count)
+          //   .attr('y', d => d.Type)
+
           .on('mouseover', (event, d) => {
             div.transition().duration(50).style('opacity', 1);
 
@@ -143,7 +150,7 @@ function draw() {
       update =>
         update.call(update =>
           // update selections -- all data elements that match with a `.dot` element
-          update.transition().duration(250)
+          update.transition().duration(250).attr('r', 40)
         ),
       exit =>
         exit.call(exit =>

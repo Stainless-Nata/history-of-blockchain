@@ -2,27 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Scrollama:</title>
-    <meta name="description" content="Scrollama: Sticky Side Example" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blockchain: Key Principles</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="../lib/d3-array.v2.min.js"></script>
-    <section id="intro">
-      <p class="intro__overline">
-        <!-- <a href="https://github.com/russellgoldenberg/scrollama"
-          >scrollama.js</a
-        > -->
-      </p>
-      <h1 class="intro__hed">Blockchain: Key Principles</h1>
-    </section>
+    <header>
+      <h1>Blockchain: Key Principles</h1>
+    </header>
     <section id="scroll">
       <div class="scroll__graphic">
         <div class="chart">
-          <div id="d3-container"></div>
+          <div id="d3-container">
+            <div id="catergory-title"></div>
+          </div>
           <p>0</p>
         </div>
       </div>
@@ -45,10 +37,11 @@
     <div class="debug"></div>
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
-    <script src="./main.js"></script>
+    <div id="chart"></div>
+    <div class="tooltip" style="opacity: 0"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../lib/d3-array.v2.min.js"></script>
 
-    <!-- resources:
-    scrollama-demo
-    https://codepen.io/aw207/pen/BXwVPa?editors=0100 -->
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

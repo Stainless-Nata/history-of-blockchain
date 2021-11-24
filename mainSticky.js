@@ -14,14 +14,24 @@ let scroller = scrollama();
 function handleStepEnter(response) {
   // response = { element, direction, index }
   let el = response.element;
-
+  console.log('element', el);
+  console.log('response', response);
   // remove is-active from all steps
   // then add is-active to this step
   steps.forEach(step => step.classList.remove('is-active'));
   el.classList.add('is-active');
 
   // update graphic based on step
+  let change = d3.selectAll('circle').attr('r', 30);
+
+  d3.select(`.dot-${el.dataset.step}`)
+    .attr('r', 50)
+    .transition(d3.easeElastic)
+    .duration(100);
+  console.log('change', change);
+  console.log('string', `.dot-${el.dataset.step}`);
   sticky.querySelector('p').innerText = el.dataset.step;
+  console.log('el.dataset', el.dataset);
 }
 
 function init() {

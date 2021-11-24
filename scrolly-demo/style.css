@@ -95,8 +95,10 @@ a:hover {
 }
 
 .chart {
-  position: absolute;
+  position: sticky;
+  /* position: -webkit-sticky; */
   right: 1rem;
+
   top: 50%;
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
