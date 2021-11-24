@@ -1,8 +1,8 @@
 // CONST and GLOBALS
 
-const width = window.innerWidth * 0.7,
-  height = window.innerHeight * 0.7,
-  margin = { top: 60, bottom: 50, left: 180, right: 0 },
+let width = window.innerWidth * 0.4,
+  height = window.innerHeight * 0.5,
+  margin = { top: 60, bottom: 60, left: 180, right: 0 },
   radius = 30;
 
 /** these variables allow us to access anything we manipulate in
@@ -147,20 +147,7 @@ function draw() {
               .duration(1200) // duration 500ms
               .attr('cy', d => yScale(d.Type))
           ),
-      update =>
-        update.call(update =>
-          // update selections -- all data elements that match with a `.dot` element
-          update.transition().duration(250).attr('r', 40)
-        ),
-      exit =>
-        exit.call(exit =>
-          //     // exit selections -- all the `.dot` element that no longer match to HTML elements
-          exit
-            .transition()
-            .delay(d => 10 * d.Type)
-            .duration(500)
-            .attr('cy', height)
-            .remove()
-        )
+      update => update,
+      exit => exit
     );
 }

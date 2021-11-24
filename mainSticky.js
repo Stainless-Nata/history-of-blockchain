@@ -22,12 +22,16 @@ function handleStepEnter(response) {
   el.classList.add('is-active');
 
   // update graphic based on step
-  let change = d3.selectAll('circle').attr('r', 30);
+  let change = d3
+    .selectAll('circle')
+    .attr('r', 30)
+    .transition(d3.easeElastic)
+    .duration(200);
 
   d3.select(`.dot-${el.dataset.step}`)
     .attr('r', 50)
     .transition(d3.easeElastic)
-    .duration(100);
+    .duration(200);
   console.log('change', change);
   console.log('string', `.dot-${el.dataset.step}`);
   sticky.querySelector('p').innerText = el.dataset.step;
