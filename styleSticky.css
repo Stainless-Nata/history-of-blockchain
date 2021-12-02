@@ -41,6 +41,7 @@ body {
   font-family: 'Noto Sans Mono', monospace;
   /* background-color: #c0ac92; */
   /* background-color: #e0d0ba; */
+  background-color: #f1e8dc;
 }
 /* scrolly */
 
@@ -71,7 +72,7 @@ article {
 .sticky-thing {
   position: -webkit-sticky;
   position: sticky;
-  width: 100%;
+  width: 90%;
   margin: 0;
   background-color: #e2ddce;
   z-index: 0;
@@ -146,4 +147,9 @@ div.tooltip {
   border-style: solid;
   border-width: thin;
   line-height: 1.2;
+}
+
+.text {
+  font-size: 12px;
+  fill: black;
 }

@@ -119,11 +119,15 @@ function draw() {
           .attr('cx', d => xScale(d.Count))
           .attr('cy', d => yScale(d.Type))
           .attr('fill', '#e0d0ba')
-          //   .append('text')
-          //   .attr('class', 'text')
-          //   .attr('text', d => d.Name)
-          //   .attr('x', d => d.Count)
-          //   .attr('y', d => d.Type)
+          .append('text')
+          //.attr('class', 'text')
+          .attr('class', d => `dot-${d.Step}`)
+          .attr('text', d => d.Name)
+          .attr('x', d => xScale(d.Count))
+          .attr('y', d => yScale(d.Type))
+          .attr('opacity', 1)
+          .attr('fill', 'black')
+          .attr('stroke', 'black')
 
           .on('mouseover', (event, d) => {
             div.transition().duration(50).style('opacity', 1);
