@@ -1,5 +1,6 @@
 /* colors:
 #ebccab
+
 */
 
 /* intro */
@@ -39,7 +40,7 @@
 body {
   font-family: 'Noto Sans Mono', monospace;
   /* background-color: #c0ac92; */
-  background-color: #e0d0ba;
+  /* background-color: #e0d0ba; */
 }
 /* scrolly */
 
@@ -52,7 +53,7 @@ body {
   padding: 1rem;
 }
 #scrolly {
-  background-color: #e0d0ba;
+  background-color: #f1e8dc;
 }
 
 #scrolly > * {
@@ -100,7 +101,7 @@ article {
 }
 
 .step.is-active {
-  background-color: rgb(202, 196, 180);
+  background-color: #e0d0ba;
   border-style: solid;
   border-color: #3b3b3b;
   color: #080808;
