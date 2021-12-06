@@ -11,6 +11,6 @@
   
   **“The biggest threat to privacy that we face is that the power of computing is doubling every 18 months. The human population is not doubling every 18 months but the ability for computers to keep track of us is,” says Phil Zimmerman, reminding us of [Moore’s Law](https://www.umsl.edu/~siegelj/information_theory/projects/Bajramovic/www.umsl.edu/_abdcf/Cs4890/link1.html).**
   
-  Zimmerman is the inventor of Pretty Good Privacy, which is software that provides data communication privacy through encryption (2002). While initially blockchain technology was created to improve the financial industry, the structure of blockchain, which allows users to store, validate and transmit data, provides transparency, decentralization, and trust and could also be profitable in other economic, legal, and political systems.
+  Zimmerman is the inventor of [Pretty Good Privacy](https://nakamotoinstitute.org/why-i-wrote-pgp/), which is software that provides data communication privacy through encryption (2002). While initially blockchain technology was created to improve the financial industry, the structure of blockchain, which allows users to store, validate and transmit data, provides transparency, decentralization, and trust and could also be profitable in other economic, legal, and political systems.
 
 
