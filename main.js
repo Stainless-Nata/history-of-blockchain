@@ -3,7 +3,7 @@
 
 let main = document.querySelector('main');
 let scrolly = main.querySelector('#scrolly');
-let sticky = scrolly.querySelector('.sticky-thing');
+let sticky = scrolly.querySelector('.sticky-chart');
 let article = scrolly.querySelector('article');
 let steps = article.querySelectorAll('.step');
 
@@ -14,8 +14,8 @@ let scroller = scrollama();
 function handleStepEnter(response) {
   // response = { element, direction, index }
   let el = response.element;
-  console.log('element', el);
-  console.log('response', response);
+  //console.log('element', el);
+  //console.log('response', response);
   // remove is-active from all steps
   // then add is-active to this step
   steps.forEach(step => step.classList.remove('is-active'));
@@ -26,20 +26,20 @@ function handleStepEnter(response) {
     .selectAll('circle')
     .transition(d3.easeElastic)
     .duration(200)
-    .attr('r', 30)
+    .attr('r', 20)
     .attr('stroke-width', 1);
-
   d3.select(`.dot-${el.dataset.step}`)
 
     .transition(d3.easeElastic)
     .duration(600)
     .attr('r', 50)
     .attr('stroke-width', 3);
+  d3.select(`text-${el.dataset.name}`).attr('fill', 'red');
 
-  console.log('change', change);
-  console.log('string', `.dot-${el.dataset.step}`);
+  //console.log('change', change);
+  //console.log('string', `.dot-${el.dataset.step}`);
   sticky.querySelector('p').innerText = el.dataset.step;
-  console.log('el.dataset', el.dataset);
+  // console.log('el.dataset', el.dataset);
 }
 
 function init() {
