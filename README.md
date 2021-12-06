@@ -1,4 +1,4 @@
-# **Blockchain: Key Principles**
+# **Blockchain: Key Principles** ([in progress](https://nchikurova.github.io/history-of-blockchain/blockchain-key-principles/))
 
 ## Abstract
   In October 2008 an unknown individual or a group of individuals under the name of Satoshi Nakomoto published a white paper [“Bitcoin: A Peer-to-Peer Electronic Cash System,”](https://nakamotoinstitute.org/bitcoin/) in which Bitcoin was described as “an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party”. 
