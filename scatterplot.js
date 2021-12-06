@@ -11,6 +11,7 @@ let width = window.innerWidth * 0.4,
 let svg;
 let xScale;
 let yScale;
+let div;
 
 // Aplication state
 let state = {
@@ -51,21 +52,12 @@ function init() {
   // let xAxis = d3.axisBottom(xScale).tickSize(0);
   let yAxis = d3.axisLeft(yScale).tickSize(0);
 
-  // .attr('style', 'position: absolute, opacity: 0;')
-  // .attr('position: top: 100%, left:50%');
-
   // create an svg element in our main `d3-container` element
   svg = d3
     .select('#sticky-thing')
     .append('svg')
     .attr('width', width)
     .attr('height', height);
-
-  //   svg
-  //     .append('g')
-  //     .attr('class', 'axis x-axis')
-  //     .attr('transform', `translate(0,${height - margin.bottom})`);
-  //.call(xAxis);
 
   // add the yAxis
   svg
@@ -78,34 +70,26 @@ function init() {
   // .attr('y', '50%') //in the middle of line
   // .attr('dx', '-5em');
 
-  div = d3
-    .select('body')
-    .append('div')
-    .attr('class', 'tooltip')
-    .style('opacity', 0);
+  // div = d3
+  //   .select('body')
+  //   .append('div')
+  //   .attr('class', 'tooltip')
+  //   .style('opacity', 0);
 
   draw();
   // calls the draw function
 }
 
 function draw() {
-  //   svg
-  //     .selectAll('text')
-  //     .data(state.data, d => d.Name)
-  //     .join('text')
-  //     .attr('class', 'label')
-  //     // this allows us to position the text in the center of the bar
-  //     .attr('y', d => yScale(d.Type))
-  //     // .text(d => d.activity)
-  //     .attr('x', d => xScale(d.Count))
-  //     .text(d => d.Name)
-  //     .attr('dy', '1.8em');
+  div = d3
+    .select('body')
+    .append('div')
+    .attr('class', 'tooltip')
+    .style('opacity', 0);
 
   svg
     .selectAll('.dot')
-
     .data(state.data, d => d.Name) // use `d.name` as the `key` to match between HTML and data elements
-
     .join(
       enter =>
         // enter selections -- all data elements that don't have a `.dot` element attached to them yet
@@ -119,15 +103,15 @@ function draw() {
           .attr('cx', d => xScale(d.Count))
           .attr('cy', d => yScale(d.Type))
           .attr('fill', '#e0d0ba')
+
           .append('text')
-          //.attr('class', 'text')
-          .attr('class', d => `dot-${d.Step}`)
+          .attr('class', 'text-name')
           .attr('text', d => d.Name)
           .attr('x', d => xScale(d.Count))
           .attr('y', d => yScale(d.Type))
           .attr('opacity', 1)
-          .attr('fill', 'black')
-          .attr('stroke', 'black')
+          // .attr('fill', 'black')
+          .attr('style', 'stroke: black; stroke-width: 0.75px')
 
           .on('mouseover', (event, d) => {
             div.transition().duration(50).style('opacity', 1);
@@ -142,16 +126,17 @@ function draw() {
               .transition() //
               .duration(100)
               .style('opacity', 0);
-          })
-          // initial value - to be transitioned
-          .call(enter =>
-            enter
-              .transition() // initialize transition
-              //.delay(d => 50 * d.rating) // delay on each element
-              .duration(1200) // duration 500ms
-              .attr('cy', d => yScale(d.Type))
-          ),
+          }),
       update => update,
       exit => exit
     );
+  // svg
+  //   .selectAll('text')
+  //   .data(state.data, d => d.Name, console.log('state.data', state.data.Name))
+  //   .join('text')
+  //   .attr('class', 'label')
+  //   .attr('y', d => yScale(d.Type))
+  //   .attr('x', d => xScale(d.Count))
+  //   .text(d => d.Name)
+  //   .attr('dy', '1.8em');
 }

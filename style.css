@@ -86,8 +86,8 @@ article {
 
 .sticky-thing p {
   padding: 1rem;
-  font-size: 8rem;
-  font-weight: 900;
+  font-size: 4rem;
+  font-weight: 800;
   color: #fff;
 }
 
@@ -120,9 +120,6 @@ article {
   cursor: pointer;
 }
 
-.dot:hover {
-  stroke-width: 2;
-}
 .tick {
   font-size: 18px;
   font-family: 'Noto Sans Mono', monospace;
@@ -149,7 +146,19 @@ div.tooltip {
   line-height: 1.2;
 }
 
-.text {
+.text-name {
   font-size: 12px;
   fill: black;
+}
+/* .dot-:hover {
+  stroke-width: 2;
+}
+
+article::before {
+  content: attr(data-parent);
+} */
+
+.category-title {
+  font-size: 20px;
+  font-weight: 600;
 }

@@ -24,14 +24,18 @@ function handleStepEnter(response) {
   // update graphic based on step
   let change = d3
     .selectAll('circle')
-    .attr('r', 30)
     .transition(d3.easeElastic)
-    .duration(200);
+    .duration(200)
+    .attr('r', 30)
+    .attr('stroke-width', 1);
 
   d3.select(`.dot-${el.dataset.step}`)
-    .attr('r', 50)
+
     .transition(d3.easeElastic)
-    .duration(200);
+    .duration(600)
+    .attr('r', 50)
+    .attr('stroke-width', 3);
+
   console.log('change', change);
   console.log('string', `.dot-${el.dataset.step}`);
   sticky.querySelector('p').innerText = el.dataset.step;
@@ -51,5 +55,4 @@ function init() {
   window.addEventListener('resize', scroller.resize);
 }
 
-// kick things off
 init();

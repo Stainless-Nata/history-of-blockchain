@@ -8,18 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      -->
 
-    <link rel="stylesheet" href="styleSticky.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <main>
-      <!-- <h2 style="background-color: #b1928c">Possible Nav Bar</h2> -->
+      <div class="tooltip" style="opacity: 0"></div>
       <script src="https://d3js.org/d3.v7.min.js"></script>
       <script src="../lib/d3-array.v2.min.js"></script>
       <nav>
@@ -50,10 +47,10 @@
 
       <section id="scrolly">
         <article>
-          <div class="step" data-step="1">
-            <p>
+          <div class="step" data-step="1990">
+            <p><h2 class='category-title' style="text-align: center;">
               Ancient History of Cryptography
-
+            </h2>
               <br />
               Cryprography (from Ancient Greek 'kriptos' - "hidden, secret" and
               'graph' - "to write" ) is the study of teqniques for secure
@@ -105,12 +102,12 @@
       </section>
       <section id="outro"></section>
     </main>
-
+    <div class="tooltip" style="opacity: 0"></div>
     <!-- <div class='debug'></div> -->
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
 
-    <script src="./mainSticky.js"></script>
+    <script src="./main.js"></script>
     <script src="./scatterplot.js"></script>
   </body>
 </html>
