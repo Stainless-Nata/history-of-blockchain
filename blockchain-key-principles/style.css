@@ -1,3 +1,145 @@
+/* colors:
+#f1e8dc
+#ebccab
+#383737;
+*/
+
+/* intro */
+
+#intro {
+  max-width: 40rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.intro__hed {
+  font-size: 2em;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.intro__dek {
+  color: #383737;
+  font-weight: 500;
+  font-style: bold;
+}
+
+#intro {
+  margin-bottom: 120px;
+}
+
+#outro {
+  height: 640px;
+}
+
+@media (min-width: 840px) {
+  .nav__examples {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
+/* body */
+body {
+  font-family: 'Noto Sans Mono', monospace;
+  /* background-color: #c0ac92; */
+  /* background-color: #e0d0ba; */
+  background-color: #f1e8dc;
+}
+/* scrolly */
+
+#scrolly {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  /* padding: 1rem; */
+}
+#scrolly {
+  background-color: #f1e8dc;
+}
+
+#scrolly > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+article {
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  max-width: 40rem;
+}
+
+.sticky-chart {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 90%;
+  margin: 0;
+  /* background-color: #e2ddce; */
+  z-index: 0;
+  top: 12vh;
+  height: 55vh;
+  /* Center everything inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky-chart p {
+  /* padding: 1rem; */
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+  opacity: 0;
+}
+.chart-title {
+  text-align: center;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 500;
+  color: rgb(136, 134, 134);
+}
+
+.step {
+  margin: 0 auto 1rem auto;
+
+  /* background-color: #f0eaea;
+  color: rgb(77, 75, 75); */
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step.is-active {
+  background-color: #e0d0ba;
+  /* border-style: solid; */
+  /* border-color: #3b3b3b; */
+  color: #080808;
+  padding: 1rem 1rem;
+}
+
+.step p {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* scatterplot */
+
+.dot {
+  cursor: pointer;
+}
+
+.tick {
+  font-size: 18px;
+  font-family: 'Noto Sans Mono', monospace;
+}
+/* .axis-label {
+  font-size: 24px;
+  fill: black;
+  text-anchor: middle; 
+} */
 div.tooltip {
   position: absolute;
   text-align: left;
@@ -14,10 +156,25 @@ div.tooltip {
   border-width: thin;
   line-height: 1.2;
 }
+
+.text-name {
+  font-size: 12px;
+  fill: black;
+}
 .dot:hover {
   stroke-width: 2;
 }
-.tick {
-  font-size: 18px;
-  /* font-family: 'Noto Sans Mono', monospace; */
+/*
+article::before {
+  content: attr(data-parent);
+} */
+
+.category-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.image {
+  max-height: 300px;
+  max-width: 300px;
 }
