@@ -1,8 +1,8 @@
 // CONST and GLOBALS
 
 let width = window.innerWidth * 0.4,
-  height = window.innerHeight * 0.5,
-  margin = { top: 40, bottom: 60, left: 10, right: 0 },
+  height = window.innerHeight * 0.6,
+  margin = { top: 70, bottom: 60, left: 30, right: 0 },
   radius = 30;
 
 /** these variables allow us to access anything we manipulate in
@@ -66,17 +66,17 @@ function init() {
     .attr('dx', '-1.3em');
   // AXES
 
-  // let xAxis = d3.axisBottom(xScale).tickSize(0);
-  //let yAxis = d3.axisLeft(yScale).tickSize(0);
+  let yAxis = d3.axisRight(yScale).tickSize(0);
 
-  // add the yAxis
-  // svg
-  //   .append('g')
-  //   .attr('class', 'axis y-axis')
-  //   .attr('transform', `translate(${margin.left},0)`)
-  //   .call(yAxis)
-  //   .append('text')
-  //   .attr('class', 'axis-label');
+  //add the yAxis
+  svg
+    .append('g')
+    .attr('class', 'axis y-axis')
+    .attr('transform', `translate(${margin.left},-65)`)
+    .call(yAxis)
+
+    .append('text')
+    .attr('class', 'axis-label');
 
   draw();
   // calls the draw function
@@ -105,7 +105,7 @@ function draw() {
         enter
           .append('circle')
           //.attr('class', 'dot')
-          .attr('class', d => `dot-${d.Step}`) // Note: this is important so we can identify it in future updates
+          .attr('class', d => `dot-${d.Year}`) // Note: this is important so we can identify it in future updates
           .attr('stroke', 'black')
           .attr('opacity', 1)
           .attr('r', radius)

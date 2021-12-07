@@ -90,7 +90,7 @@ article {
   font-size: 2rem;
   font-weight: 300;
   color: black;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .chart-title {
   text-align: center;
@@ -164,11 +164,20 @@ div.tooltip {
 .dot:hover {
   stroke-width: 2;
 }
-/*
-article::before {
-  content: attr(data-parent);
-} */
 
+.tick {
+  font-size: 18px;
+  font-weight: 800;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+}
+.domain {
+  stroke: none;
+}
+.label {
+  font-weight: 600;
+}
 .category-title {
   font-size: 20px;
   font-weight: 600;
