@@ -27,15 +27,15 @@ function handleStepEnter(response) {
     .transition(d3.easeElastic)
     .duration(200)
     .attr('r', 30)
-    .attr('stroke-width', 1);
-  d3.select(`.dot-${el.dataset.step}`)
+    .attr('stroke-width', 1)
+    .style('opacity', 0.5);
 
+  d3.select(`.dot-${el.dataset.step}`)
     .transition(d3.easeElastic)
     .duration(600)
     .attr('r', 47)
     .attr('stroke-width', 3)
-    .text(d => d.Year);
-  d3.select(`text-${el.dataset.name}`).attr('fill', 'red');
+    .style('opacity', 1);
 
   //console.log('change', change);
   //console.log('string', `.dot-${el.dataset.step}`);

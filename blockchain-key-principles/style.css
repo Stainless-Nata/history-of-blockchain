@@ -16,7 +16,7 @@
 .intro-hed {
   font-size: 3em;
   font-weight: 900;
-  margin: 3rem auto 4rem auto;
+  margin: 3rem auto 3rem auto;
 }
 
 .intro-dek {
@@ -30,7 +30,7 @@
 }
 
 #intro {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 #outro {
@@ -93,10 +93,10 @@ article {
 
 .sticky-chart p {
   /* padding: 1rem; */
-  font-size: 2rem;
-  font-weight: 300;
+  /* font-size: 2rem;
+  font-weight: 300; */
   color: black;
-  /* opacity: 0; */
+  opacity: 0;
 }
 .chart-title {
   text-align: center;
@@ -154,11 +154,11 @@ div.tooltip {
   line-height: 1.2;
 }
 
-.text-name {
+.text-label {
   font-size: 12px;
   fill: black;
 }
-.dot:hover {
+.step:hover {
   stroke-width: 2;
 }
 
