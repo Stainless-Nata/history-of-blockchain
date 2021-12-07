@@ -1,13 +1,13 @@
 Count,Type,Name,Step,Year
 1,Encryption,Ancient Times,1,1470
-1,Open_source,"""The Printer Story""",5,1000
-1,Decentralization,Arpanet,9,1000
+1,Open_source,"""The Printer Story""",5,1980
+1,Decentralization,Arpanet,9,1960s
 2,Encryption,Wartime,2,1950s
 2,Open_source,GNU,6,1983
-2,Decentralization,Centrilized Computing,10,1000
+2,Decentralization,Centrilized Computing,10,1970s
 3,Encryption,RSA,3,1977
-3,Open_source,Linux,7,1000
-3,Decentralization,UNIX,11,1000
+3,Open_source,Linux,7,1991
+3,Decentralization,UNIX,11,1970
 4,Encryption,PGP,4,1991
-4,Open_source,Git,8,2012
-4,Decentralization,Bittorent,12,1000
+4,Open_source,Git,8,2005
+4,Decentralization,Bittorent,12,2001
