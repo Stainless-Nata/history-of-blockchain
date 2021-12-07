@@ -1,26 +1,32 @@
 /* colors:
 #f1e8dc
-#ebccab
+#e0d0ba
 #383737;
 */
 
 /* intro */
 
 #intro {
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 1rem auto;
   text-align: center;
+  height: 100vh;
 }
 
-.intro__hed {
-  font-size: 2em;
-  margin: 2rem auto 0.5rem auto;
+.intro-hed {
+  font-size: 3em;
+  font-weight: 900;
+  margin: 3rem auto 4rem auto;
 }
 
-.intro__dek {
+.intro-dek {
   color: #383737;
-  font-weight: 500;
+  font-weight: 600;
   font-style: bold;
+}
+.intro-bitcoin {
+  background-color: #e0d0ba;
+  padding: 3% 2% 3% 2%;
 }
 
 #intro {
@@ -131,15 +137,6 @@ article {
   cursor: pointer;
 }
 
-.tick {
-  font-size: 18px;
-  font-family: 'Noto Sans Mono', monospace;
-}
-/* .axis-label {
-  font-size: 24px;
-  fill: black;
-  text-anchor: middle; 
-} */
 div.tooltip {
   position: absolute;
   text-align: left;
@@ -166,11 +163,10 @@ div.tooltip {
 }
 
 .tick {
+  /* font-family: 'Noto Sans Mono', monospace; */
   font-size: 18px;
   font-weight: 800;
-  border: black;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid black;
 }
 .domain {
   stroke: none;
@@ -191,4 +187,8 @@ div.tooltip {
 .image {
   max-height: 300px;
   max-width: 300px;
+}
+.arrow {
+  max-width: 40px;
+  opacity: 0.6;
 }

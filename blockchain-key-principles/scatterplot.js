@@ -72,7 +72,7 @@ function init() {
   svg
     .append('g')
     .attr('class', 'axis y-axis')
-    .attr('transform', `translate(${margin.left},-65)`)
+    .attr('transform', `translate(${margin.left},-70)`)
     .call(yAxis)
 
     .append('text')
@@ -96,7 +96,7 @@ function draw() {
     .attr('class', 'tooltip')
     .style('opacity', 0);
 
-  svg
+  let circles = svg
     .selectAll('.dot')
     .data(state.data, d => d.Name) // use `d.name` as the `key` to match between HTML and data elements
     .join(

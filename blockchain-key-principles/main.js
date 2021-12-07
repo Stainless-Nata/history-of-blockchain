@@ -32,12 +32,14 @@ function handleStepEnter(response) {
 
     .transition(d3.easeElastic)
     .duration(600)
-    .attr('r', 50)
-    .attr('stroke-width', 3);
+    .attr('r', 47)
+    .attr('stroke-width', 3)
+    .text(d => d.Year);
   d3.select(`text-${el.dataset.name}`).attr('fill', 'red');
 
   //console.log('change', change);
   //console.log('string', `.dot-${el.dataset.step}`);
+  //sticky.querySelector('p').innerText = el.dataset.step;
   sticky.querySelector('p').innerText = el.dataset.step;
   // console.log('el.dataset', el.dataset);
 }
