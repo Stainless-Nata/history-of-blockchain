@@ -26,7 +26,7 @@ function handleStepEnter(response) {
     .selectAll('circle')
     .transition(d3.easeElastic)
     .duration(200)
-    .attr('r', 20)
+    .attr('r', 30)
     .attr('stroke-width', 1);
   d3.select(`.dot-${el.dataset.step}`)
 
