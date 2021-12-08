@@ -36,12 +36,17 @@ function handleStepEnter(response) {
     .attr('r', 47)
     .attr('stroke-width', 3)
     .style('opacity', 1);
+  d3.select(`.name-${el.dataset.name}`)
+    .append('text', `.name-${el.dataset.name}`)
+    .style('opacity', 1);
 
   //console.log('change', change);
-  //console.log('string', `.dot-${el.dataset.step}`);
+  console.log('string', `.name-${el.dataset.name}`);
+  console.log('string', `.dot-${el.dataset.step}`);
+  console.log('name:', el.dataset.name);
   //sticky.querySelector('p').innerText = el.dataset.step;
   sticky.querySelector('p').innerText = el.dataset.step;
-  // console.log('el.dataset', el.dataset);
+  console.log('el.dataset', el.dataset);
 }
 
 function init() {

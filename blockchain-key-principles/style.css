@@ -1,7 +1,8 @@
 /* colors:
-#f1e8dc
-#e0d0ba
-#383737;
+
+Light beige (background): #f1e8dc,
+Dark beige (circles and active step of article): #e0d0ba
+Dark grey (intro text): #383737;
 */
 
 /* intro */
@@ -101,19 +102,18 @@ article {
   color: black;
   opacity: 0;
 }
-.chart-title {
+/* .chart-title {
   text-align: center;
   font-size: 18px;
   margin: 0px;
   font-weight: 500;
-  color: rgb(136, 134, 134);
-}
+  color: black;
+} */
 
 .step {
   margin: 0 auto 1rem auto;
 
-  /* background-color: #f0eaea;
-  color: rgb(77, 75, 75); */
+  /* background-color: #f0eaea; */
 }
 
 .step:last-child {
@@ -122,9 +122,11 @@ article {
 
 .step.is-active {
   background-color: #e0d0ba;
-  /* border-style: solid; */
-  /* border-color: #3b3b3b; */
+  border-style: solid;
+  border-color: #3b3b3b;
+
   color: #080808;
+
   padding: 1rem 1rem;
 }
 

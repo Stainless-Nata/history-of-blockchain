@@ -22,7 +22,7 @@ let state = {
 // Load data
 Promise.all([
   d3.csv('./../data/draft6.csv', d3.autoType).then(raw_data => {
-    console.log('raw_data', raw_data, raw_data[0]);
+    //console.log('raw_data', raw_data, raw_data[0]);
     state.data = raw_data;
 
     init();
@@ -46,7 +46,7 @@ function init() {
     .range([margin.top + 20, height - margin.bottom])
     .paddingInner(60);
 
-  console.log(yScale.domain());
+  //console.log(yScale.domain());
 
   // create an svg element in our main `d3-container` element
   svg = d3
@@ -129,9 +129,9 @@ function draw() {
               .style('opacity', 0);
           })
           .append('text')
-          //.attr('class', 'dot')
-          .attr('class', 'text-name')
-          .text(d => d.Name) // Note: this is important so we can identify it in future updates
+
+          .attr('class', 'name')
+          .text(d => `name-${d.Name}`, console.log(`.name-${d.Name}`)) // Note: this is important so we can identify it in future updates
 
           .attr('opacity', 1)
 
