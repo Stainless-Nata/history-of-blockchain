@@ -11,6 +11,15 @@
   margin: 1rem auto;
   text-align: center;
   height: 100vh;
+  color: #383737;
+}
+@media (max-width: 800px) {
+  #intro-dek {
+    margin: 3rem auto;
+  }
+  #intro-bitcoin {
+    padding: 5% 3% 5% 3%;
+  }
 }
 
 .intro-hed {
@@ -37,12 +46,6 @@
   height: 640px;
 }
 
-@media (min-width: 840px) {
-  .nav__examples {
-    margin-top: 0;
-    margin-left: 2rem;
-  }
-}
 /* body */
 body {
   font-family: 'Noto Sans Mono', monospace;
