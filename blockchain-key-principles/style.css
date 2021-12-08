@@ -192,3 +192,6 @@ div.tooltip {
   max-width: 40px;
   opacity: 0.6;
 }
+a {
+  color: purple;
+}
