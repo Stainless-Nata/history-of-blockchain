@@ -77,7 +77,7 @@ body {
 article {
   position: relative;
   padding: 0.5rem 0.5rem;
-  max-width: 40rem;
+  max-width: 50rem;
 }
 
 .sticky-chart {
@@ -85,6 +85,7 @@ article {
   position: sticky;
   width: 100%;
   margin: 0;
+  margin-right: 1%;
   /* background-color: #e2ddce; */
   z-index: 0;
   top: 12vh;
@@ -96,7 +97,7 @@ article {
 }
 
 .sticky-chart p {
-  max-width: 5rem;
+  max-width: 6rem;
   /* padding: 1rem; */
   font-size: 20px;
   /* font-weight: 300; */
@@ -187,10 +188,17 @@ div.tooltip {
   font-size: 26px;
   font-weight: 900;
   text-align: center;
+  padding: 5%;
 }
 .image {
   max-height: 300px;
   max-width: 300px;
+}
+.imageArpa {
+  max-width: 500px;
+}
+.imageInternet {
+  max-height: 500px;
 }
 .arrow {
   max-width: 40px;

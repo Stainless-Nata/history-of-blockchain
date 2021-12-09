@@ -28,7 +28,7 @@ function handleStepEnter(response) {
     .duration(200)
     .attr('r', 30)
     .attr('stroke-width', 1)
-    .style('opacity', 0.5);
+    .style('opacity', 0.7);
 
   d3.select(`.dot-${el.dataset.step}`)
     .transition(d3.easeElastic)
@@ -57,7 +57,7 @@ function init() {
   scroller
     .setup({
       step: '#scrolly article .step',
-      offset: 0.5,
+      offset: 0.2,
       debug: false, //if true - we can see the trigger on the webpage
     })
     .onStepEnter(handleStepEnter);

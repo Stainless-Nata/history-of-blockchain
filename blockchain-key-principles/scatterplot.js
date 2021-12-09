@@ -1,6 +1,6 @@
 // CONST and GLOBALS
 
-let width = window.innerWidth * 0.4,
+let width = window.innerWidth * 0.3,
   height = window.innerHeight * 0.6,
   margin = { top: 70, bottom: 60, left: 30, right: 0 },
   radius = 30;
