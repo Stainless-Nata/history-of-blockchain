@@ -83,7 +83,7 @@ article {
 .sticky-chart {
   position: -webkit-sticky;
   position: sticky;
-  width: 90%;
+  width: 100%;
   margin: 0;
   /* background-color: #e2ddce; */
   z-index: 0;
@@ -96,12 +96,14 @@ article {
 }
 
 .sticky-chart p {
+  max-width: 5rem;
   /* padding: 1rem; */
-  /* font-size: 2rem;
-  font-weight: 300; */
+  font-size: 20px;
+  /* font-weight: 300; */
   color: black;
-  opacity: 0;
+  /* opacity: 0; */
 }
+
 /* .chart-title {
   text-align: center;
   font-size: 18px;
@@ -129,12 +131,12 @@ article {
 
   padding: 1rem 1rem;
 }
-
-.step p {
+/* do i need this? */
+/* .step p {
   text-align: center;
   padding: 0.5rem;
   font-size: 1rem;
-}
+} */
 
 /* scatterplot */
 
@@ -162,9 +164,6 @@ div.tooltip {
 .text-label {
   font-size: 12px;
   fill: black;
-}
-.step:hover {
-  stroke-width: 2;
 }
 
 .tick {
