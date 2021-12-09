@@ -76,7 +76,7 @@ body {
 
 article {
   position: relative;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1rem;
   max-width: 50rem;
 }
 
@@ -114,8 +114,8 @@ article {
 } */
 
 .step {
-  margin: 0 auto 1rem auto;
-
+  margin: 1rem auto 1rem auto;
+  padding: 2rem 2rem;
   /* background-color: #f0eaea; */
 }
 
@@ -129,8 +129,8 @@ article {
   border-color: #3b3b3b;
 
   color: #080808;
-
-  padding: 1rem 1rem;
+  margin: 1rem auto 1rem auto;
+  padding: 2rem 2rem;
 }
 /* do i need this? */
 /* .step p {

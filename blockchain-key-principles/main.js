@@ -57,7 +57,7 @@ function init() {
   scroller
     .setup({
       step: '#scrolly article .step',
-      offset: 0.2,
+      offset: 0.5,
       debug: false, //if true - we can see the trigger on the webpage
     })
     .onStepEnter(handleStepEnter);

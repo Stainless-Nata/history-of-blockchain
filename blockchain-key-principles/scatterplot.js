@@ -156,4 +156,19 @@ function draw() {
       //),
       exit => exit
     );
+
+  let line = svg
+    .selectAll('path.trend')
+    .data(state.data)
+    .join(
+      enter => enter.append('path').attr('class', 'trend').attr('opacity', 0), // start them off as opacity 0 and fade them in
+      update => update, // pass through the update selection
+      exit => exit.remove()
+    );
+  // .call(selection =>
+  //     selection
+  //         .transition() // sets the transition on the 'Enter' + 'Update' selections together.
+  //         .duration(800)
+  //         .attr("opacity", 0.8)
+  //         .attr("d", d => areaFunc(d))
 }
