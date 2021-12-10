@@ -6,6 +6,7 @@ let scrolly = main.querySelector('#scrolly');
 let sticky = scrolly.querySelector('.sticky-chart');
 let article = scrolly.querySelector('article');
 let steps = article.querySelectorAll('.step');
+//let name = article.querySelector('.name');
 
 // initialize the scrollama
 let scroller = scrollama();
@@ -26,14 +27,23 @@ function handleStepEnter(response) {
     .selectAll('circle')
     .transition(d3.easeElastic)
     .duration(200)
-    .attr('r', 10)
+    .attr('r', d => {
+      if (d.Name === 'Bitcoin') return 20;
+      else return 10;
+    })
+    .attr('fill', d => {
+      if (d.Type === 'Cryptography') return 'darkgrey';
+      else if (d.Type === 'Open-source software') return '#c0ac92';
+      else if (d.Type === 'Decentralization') return 'gold';
+      else return '#E98220';
+    })
     .attr('stroke-width', 1)
     .style('opacity', 1);
 
   d3.select(`.dot-${el.dataset.step}`)
     .transition(d3.easeElastic)
     .duration(600)
-    .attr('r', 30)
+    .attr('fill', 'black')
     .attr('stroke-width', 3)
     .attr('stroke-color', 'black');
   // .style('opacity', 1);
