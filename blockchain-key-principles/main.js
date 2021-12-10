@@ -26,14 +26,14 @@ function handleStepEnter(response) {
     .selectAll('circle')
     .transition(d3.easeElastic)
     .duration(200)
-    .attr('r', 30)
+    .attr('r', 10)
     .attr('stroke-width', 1)
-    .style('opacity', 0.7);
+    .style('opacity', 1);
 
   d3.select(`.dot-${el.dataset.step}`)
     .transition(d3.easeElastic)
     .duration(600)
-    .attr('r', 47)
+    .attr('r', 30)
     .attr('stroke-width', 3)
     .attr('stroke-color', 'black');
   // .style('opacity', 1);

@@ -1,13 +1,13 @@
-Count,Type,Name
-1,Cryptography,Ancient History
-2,Cryptography,Wartime
-3,Cryptography,RSA
-4,Cryptography,PGP
-1,Open_source,"""The Printer Story"""
-2,Open_source,GNU
-3,Open_source,Linux
-4,Open_source,Git
-1,Decentralization,Arpanet
-2,Decentralization,Centrilized Computing
-3,Decentralization,UNIX
-4,Decentralization,Bittorent
+Count,Type,Name,Step,Year
+1,Cryptography,Ancient Times,1,1900
+1,Open-source software,"""The Printer Story""",5,1980
+1,Decentrilization,ARPA,9,1957
+2,Cryptography,Wartime,2,1950
+2,Open-source software,GNU,6,1983
+2,Decentrilization,Decentrilization,10,1990
+3,Cryptography,RSA,3,1977
+3,Open-source software,Linux,7,1991
+3,Decentrilization,Centralization,11,1999
+4,Cryptography,PGP,4,1991
+4,Open-source software,GitHub,8,2008
+4,Decentrilization,BitTorrent,12,2001
