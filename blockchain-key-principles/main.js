@@ -27,18 +27,18 @@ function handleStepEnter(response) {
     .selectAll('circle')
     .transition(d3.easeElastic)
     .duration(200)
-    .attr('r', d => {
-      if (d.Name === 'Bitcoin') return 20;
-      else return 10;
-    })
+    .attr('r', 10)
     .attr('fill', d => {
       if (d.Type === 'Cryptography') return 'darkgrey';
       else if (d.Type === 'Open-source software') return '#c0ac92';
       else if (d.Type === 'Decentralization') return 'gold';
-      else return '#E98220';
+      else return '#f1e8dc';
     })
     .attr('stroke-width', 1)
-    .style('opacity', 1);
+    .attr('opacity', d => {
+      if (d.Type === 'Digital Money') return 0.4;
+      else return 1;
+    });
 
   d3.select(`.dot-${el.dataset.step}`)
     .transition(d3.easeElastic)
@@ -54,13 +54,14 @@ function handleStepEnter(response) {
     .style('opacity', 1);
 
   //console.log('change', change);
-  console.log('string', `.name-${el.dataset.name}`);
-  console.log('string', `.dot-${el.dataset.step}`);
-  console.log('name:', el.dataset.name);
+  //console.log('string', `.name-${el.dataset.name}`);
+  //console.log('string', `.dot-${el.dataset.step}`);
+  //console.log('name:', el.dataset.name);
+  //console.log('step:', el.dataset.step);
 
   //sticky.querySelector('p').innerText = el.dataset.step;
   sticky.querySelector('p').innerText = el.dataset.name;
-  console.log('el.dataset', el.dataset);
+  //console.log('el.dataset', el.dataset);
 }
 
 function init() {

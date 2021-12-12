@@ -69,34 +69,7 @@ body {
 article {
   position: relative;
   padding: 1rem 1rem;
-  max-width: 50rem;
-}
-@media (max-width: 800px) {
-  #intro-dek {
-    margin: 3rem auto;
-  }
-  #intro-bitcoin {
-    padding: 5% 3% 5% 3%;
-  }
-
-  article {
-    position: relative;
-    padding: 1rem 1rem;
-    max-width: 30rem;
-  }
-}
-@media (max-width: 800px) {
-  #intro-dek {
-    margin: 2rem auto;
-  }
-  #intro-bitcoin {
-    padding: 5% 3% 5% 3%;
-  }
-  article {
-    position: relative;
-    padding: 1rem 1rem;
-    max-width: 20rem;
-  }
+  min-width: 60%;
 }
 
 .sticky-chart {
@@ -105,21 +78,21 @@ article {
   width: 100%;
   margin: 0;
   z-index: 0;
-  top: 18vh;
-  height: 55vh;
+  top: 1vh;
+  height: 90vh;
   /* Center everything inside */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
 
 .sticky-chart p {
-  max-width: 6rem;
+  /* max-width: 6rem; */
   /* padding: 1rem; */
-  font-size: 20px;
+  font-size: 22px;
   /* font-weight: 300; */
   color: black;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .step {
@@ -143,7 +116,7 @@ article {
 
 .step p {
   text-align: center;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   font-size: 1rem;
 }
 
@@ -151,6 +124,9 @@ article {
 
 .dot {
   cursor: pointer;
+}
+.dot:hover {
+  stroke-width: 3;
 }
 
 div.tooltip {
@@ -181,17 +157,23 @@ div.tooltip {
   font-weight: 800;
   border: 1px solid black;
 }
-/* .domain {
+.grid-lines {
+  opacity: 0.4;
+}
+.domain {
   stroke: none;
-} */
+}
 .trend {
   fill: none;
   stroke: black;
 }
+
+/* text over circles */
 .label {
   font-weight: 600;
   min-height: fit-content;
 }
+
 .category-title {
   font-size: 20px;
   font-weight: 600;
@@ -221,6 +203,7 @@ a {
   color: purple;
 }
 
+/* ICONS */
 .fa {
   /* padding: 20px; */
   width: 35px;
@@ -242,4 +225,32 @@ a {
 }
 .fa-envelope {
   color: black;
+}
+
+@media (max-width: 900px) {
+  #intro-dek {
+    margin: 3rem auto;
+  }
+  #intro-bitcoin {
+    padding: 5% 3% 5% 3%;
+  }
+
+  article {
+    position: relative;
+    padding: 1rem 1rem;
+    max-width: 30rem;
+  }
+}
+@media (max-width: 700px) {
+  #intro-dek {
+    margin: 2rem auto;
+  }
+  #intro-bitcoin {
+    padding: 5% 3% 5% 3%;
+  }
+  article {
+    position: relative;
+    padding: 1rem 1rem;
+    max-width: 20rem;
+  }
 }
