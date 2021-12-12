@@ -150,7 +150,7 @@ function draw() {
             else return yScale(d.Year);
           })
           .attr('cx', d => xScale(d.Type))
-          .attr('r', 10)
+          .attr('r', 15)
           .attr('fill', d => {
             if (d.Type === 'Cryptography') return 'darkgrey';
             else if (d.Type === 'Open-source software') return '#c0ac92';

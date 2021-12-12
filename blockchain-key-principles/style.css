@@ -108,8 +108,8 @@ article {
 
 .step.is-active {
   background-color: #e0d0ba;
-  border-style: solid;
-  border-color: #3b3b3b;
+  /* border-style: solid; */
+  /* border-color: #3b3b3b; */
 
   color: #080808;
   margin: 1rem auto 1rem auto;
@@ -211,7 +211,15 @@ div.tooltip {
 a {
   color: purple;
 }
-
+#more {
+  display: none;
+}
+#myBtn {
+  font-family: 'Noto Sans Mono', monospace;
+  border-style: solid;
+  border-radius: 20%;
+  background-color: #c0ac92;
+}
 /* ICONS */
 .fa {
   /* padding: 20px; */

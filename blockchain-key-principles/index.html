@@ -106,6 +106,14 @@
 Even though DES was cracked and compromised, a variation of DES called Triple DES, or 3DES, uses three iterations of DES to encrypt data.  -->
             
               <br><br>
+              <span id="dots">...</span><span id="more">Although the DES standard was set by NBS and IBM, the National Security Agency (NSA) insisted on modifications to the algorithm. The most prominent was changing the key size from 128 bits to 56 bits. NSA enforced modifications to give them a better chance at breaking the algorithm using special computer equipment. The reduction in key size eventually undid DES. Since the key length was reduced to 56 bits, and the Feistel network worked on 64-bit blocks, eight additional parity bits needed to be added to the input data because it is split to feed onto the blocks. <br><br>
+                The DES algorithm is called a symmetric encryption algorithm, which means that the same key used to encrypt data is the same key that is used to decrypt the data. This is similar, in principle, to polyalphabetic ciphers.
+                In 1997, a competition called the DES Challenge (DESCHALL) ended after 140 days of trying to break a DES algorithm through a massive distributed computing effort on the Internet. It was done by a brute-force attack, trying different key combinations out of a total key space of 72 quadrillion keys. The attack worked by having a single server controlling the keys. This server acted as the brain for the entire operation. Each computer that took part in the challenge had to ask for a range of keys from the key server and then report their result. The key server also logged the unique IP addresses of the machines involved and reported that over 78,000 individual machines took part in the challenge.
+  
+  Even though DES was cracked and compromised, a variation of DES called Triple DES, or 3DES, uses three iterations of DES to encrypt data.
+              </span>
+              <button onclick="readMore()" id="myBtn">Read more about DES</button>
+              <br><br>
             <!-- DES was starting to show its age, and a three-year long public contest was launched in 1997 by the National Institute of Standards and Technology (NIST) to find a new encryption standard. In 1999, five finalists were narrowed down from more than 15 submissions. These finalists were algorithms such as Rijndael, RC6, Twofish, Mars, and Serpent. The submissions had to conform to two main requirements. The block size had to be 128 bits and the algorithm had to be fast and efficient. The winner was the Rijndael cipher, which was developed by two Belgian cryptographers, Joan Daemen and Vincent Rijmen.  -->
            
             The algorithms discussed above are symmetrical algorithms, which means that they use the same key for encryption and decryption. The drawback of these algorithms is that it is very hard to share the keys between multiple parties. <br><br>
@@ -259,6 +267,9 @@ Many file-sharing Web sites are based on BitTorrent because of its efficient use
           <br><br>
           <p style="font-size: 12px; text-align: right;">Source: <a href="https://school-eb-com.remote.baruch.cuny.edu/levels/high/article/BitTorrent/571419" target="_blank">BitTorrent by Erik Gregersen</a></p>
 </div>
+<div id="id1"class="step" data-step="13" data-name="Decentralization BitTorrent">
+
+</div>
         </article>
 
         <div id="sticky-chart" class="sticky-chart">
@@ -282,11 +293,12 @@ Many file-sharing Web sites are based on BitTorrent because of its efficient use
           <a title="Welcome to my Github profile" href="https://github.com/nchikurova" class="fa fa-github fa-2x"
               src="./../images/GitHub.png">
           </a>
+         
+
           <a title="Please email me if you have any questions or comments"
-              href="https://www.linkedin.com/in/nadezda-chikurova-1a3325138/" class="fa fa-envelope fa-2x">
+              href="mailto:chikurova90@gmail.com?subject=just-a-subject" class="fa fa-envelope fa-2x">
           </a>
 
-          
 
       </div>
       </section>

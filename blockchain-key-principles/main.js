@@ -27,7 +27,7 @@ function handleStepEnter(response) {
     .selectAll('circle')
     .transition(d3.easeElastic)
     .duration(200)
-    .attr('r', 10)
+    .attr('r', 15)
     .attr('fill', d => {
       if (d.Type === 'Cryptography') return 'darkgrey';
       else if (d.Type === 'Open-source software') return '#c0ac92';
@@ -76,5 +76,22 @@ function init() {
   // setup resize event
   window.addEventListener('resize', scroller.resize);
 }
+// added button Read more
+// https://www.w3schools.com/howto/howto_js_read_more.asp
 
+function readMore() {
+  var dots = document.getElementById('dots');
+  var moreText = document.getElementById('more');
+  var btnText = document.getElementById('myBtn');
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    btnText.innerHTML = 'Read more about DES';
+    moreText.style.display = 'none';
+  } else {
+    dots.style.display = 'none';
+    btnText.innerHTML = 'Read less';
+    moreText.style.display = 'inline';
+  }
+}
 init();
