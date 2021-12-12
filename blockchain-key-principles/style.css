@@ -47,7 +47,9 @@ body {
   background-color: #f1e8dc;
 }
 /* scrolly */
-
+main {
+  margin: 1rem 1rem;
+}
 #scrolly {
   position: relative;
   display: -webkit-box;
@@ -180,10 +182,17 @@ div.tooltip {
   text-align: center;
 }
 .title {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #f1e8dc;
+  padding: 3%;
+}
+.title {
   font-size: 26px;
   font-weight: 900;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
 }
 .image {
   max-height: 300px;
