@@ -3,7 +3,7 @@
 // CONST and GLOBALS
 
 let width = 400; //window.innerWidth * 0.3,
-height = 700; //window.innerHeight * 0.7,
+height = 700; //window.innerHeight * 0.9),
 margin = { top: 60, bottom: 100, left: 80, right: 100 };
 
 let formatYear = d3.timeFormat('%Y');
