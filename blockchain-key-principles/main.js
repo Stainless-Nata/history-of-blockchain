@@ -6,7 +6,6 @@ let scrolly = main.querySelector('#scrolly');
 let sticky = scrolly.querySelector('.sticky-chart');
 let article = scrolly.querySelector('article');
 let steps = article.querySelectorAll('.step');
-//let name = article.querySelector('.name');
 
 // initialize the scrollama
 let scroller = scrollama();
@@ -31,7 +30,7 @@ function handleStepEnter(response) {
     .attr('fill', d => {
       if (d.Type === 'Cryptography') return 'darkgrey';
       else if (d.Type === 'Open-source software') return '#c0ac92';
-      else if (d.Type === 'Decentralization') return 'gold';
+      else if (d.Type === 'Decentralization') return '#E9BB4F';
       else return '#f1e8dc';
     })
     .attr('stroke-width', 1)
@@ -46,22 +45,21 @@ function handleStepEnter(response) {
     .attr('fill', 'black')
     .attr('stroke-width', 3)
     .attr('stroke-color', 'black');
-  // .style('opacity', 1);
+
   d3.select(`.name-${el.dataset.name}`)
-    // .transition(d3.easeElastic)
-    // .duration(600)
     .append('text', `.name-${el.dataset.name}`)
     .style('opacity', 1);
 
+  // for debugging
   //console.log('change', change);
+  //console.log('el.dataset', el.dataset);
   //console.log('string', `.name-${el.dataset.name}`);
   //console.log('string', `.dot-${el.dataset.step}`);
   //console.log('name:', el.dataset.name);
   //console.log('step:', el.dataset.step);
 
-  //sticky.querySelector('p').innerText = el.dataset.step;
+  //sticky.querySelector('p').innerText = el.dataset.step; - initial step set up
   sticky.querySelector('p').innerText = el.dataset.name;
-  //console.log('el.dataset', el.dataset);
 }
 
 function init() {
@@ -76,7 +74,7 @@ function init() {
   // setup resize event
   window.addEventListener('resize', scroller.resize);
 }
-// added button Read more
+// adding button 'Read more' source:
 // https://www.w3schools.com/howto/howto_js_read_more.asp
 
 function readMore() {

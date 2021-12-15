@@ -2,8 +2,8 @@
 
 // CONST and GLOBALS
 
-let width = 400; //window.innerWidth * 0.3,
-height = 700; //window.innerHeight * 0.9),
+let width = 400;
+height = 700;
 margin = { top: 65, bottom: 100, left: 80, right: 100 };
 
 let formatYear = d3.timeFormat('%Y');
@@ -15,7 +15,6 @@ let xScale;
 let yScale;
 let div;
 let text;
-//let title;
 
 // Aplication state
 let state = {
@@ -46,7 +45,6 @@ Promise.all([
 function init() {
   yScale = d3
     .scaleTime()
-    //.domain(1900, 2010)
     .domain(d3.extent(state.data, d => d.Year))
     .range([margin.top + 20, height - margin.bottom]);
 
@@ -56,12 +54,6 @@ function init() {
     .range([margin.left, width - margin.right])
     .paddingInner(5);
 
-  // create an svg element in our main `d3-container` element
-  // svg = d3
-  //   .select('#sticky-chart')
-  //   .append('svg')
-  //   .attr('width', width)
-  //   .attr('height', height);
   svg = d3
     .select('#sticky-chart')
     .append('svg')
@@ -84,13 +76,11 @@ function init() {
       else return formatYear(d.Year);
     })
     .attr('font-size', 12);
-  // .attr('dy', '2em')
-  // .attr('dx', d => yScale(d.Year));
 
   // AXES
   let xAxis = d3.axisBottom(xScale).ticks(0);
   let yAxis = d3.axisRight(yScale).tickSize(0);
-
+  // adding the xAxis
   svg
     .append('g')
     .attr('class', 'axis x-axis')
@@ -98,13 +88,14 @@ function init() {
     .call(xAxis)
     .attr('writing-mode', 'vertical-rl');
 
-  //add the yAxis
+  //adding the yAxis
   svg
     .append('g')
     .attr('class', 'axis y-axis')
     .attr('transform', `translate(${width - margin.left + 20},0)`)
     .call(yAxis);
 
+  //adding Grid Lines
   function xGridLines() {
     return d3.axisBottom().scale(xScale).ticks(4);
   }
@@ -139,14 +130,16 @@ function draw() {
         // enter selections -- all data elements that don't have a `.dot` element attached to them yet
         enter
           .append('circle')
-          .attr('class', d => `dot-${d.Step}`) // Note: this is important so we can identify it in future updates
+          .attr('class', d => `dot-${d.Step}`) // class of the circles corresponds to the step in the article
           .attr('stroke', 'black')
           .attr('opacity', d => {
             if (d.Type === 'Digital Money') return 0.4;
+            // since 'Digital Money' is the continuation of this project, I gave circles lower opacity
             else return 1;
           })
           .attr('cy', d => {
             if (d.Name === 'Ancient Times') return '1em';
+            // moving 'Antient Times' data point higher than 1920 point
             else return yScale(d.Year);
           })
           .attr('cx', d => xScale(d.Type))
@@ -154,13 +147,10 @@ function draw() {
           .attr('fill', d => {
             if (d.Type === 'Cryptography') return 'darkgrey';
             else if (d.Type === 'Open-source software') return '#c0ac92';
-            else if (d.Type === 'Decentralization') return 'gold';
+            else if (d.Type === 'Decentralization') return '#E9BB4F';
             else return '#f1e8dc';
           })
           .on('mouseover', (event, d) => {
-            //d3.select(this).attr('stroke-width', 3);
-            //console.log(this);
-            // tooltip
             div.transition().duration(50).style('opacity', 1);
 
             div
@@ -190,7 +180,7 @@ function draw() {
             // getting to the atricle of the clicked circle
             d3.select(`#id${d.Step}`).node().scrollIntoView({
               block: 'start',
-              behavior: 'smooth',
+              behavior: 'smooth', // enables smooth scrolling
               inline: 'start',
             });
           }),
