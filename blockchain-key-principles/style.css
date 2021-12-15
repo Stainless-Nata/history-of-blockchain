@@ -194,6 +194,9 @@ div.tooltip {
   text-align: center;
   padding: 3%;
 }
+.why {
+  text-align: center;
+}
 .image {
   max-height: 300px;
   max-width: 300px;
