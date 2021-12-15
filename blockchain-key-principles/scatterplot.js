@@ -4,7 +4,7 @@
 
 let width = 400; //window.innerWidth * 0.3,
 height = 700; //window.innerHeight * 0.9),
-margin = { top: 60, bottom: 100, left: 80, right: 100 };
+margin = { top: 65, bottom: 100, left: 80, right: 100 };
 
 let formatYear = d3.timeFormat('%Y');
 /** these variables allow us to access anything we manipulate in
@@ -25,7 +25,7 @@ let state = {
 // Load data
 Promise.all([
   d3
-    .csv('./../data/draft5.csv', d => ({
+    .csv('./../data/data.csv', d => ({
       Year: new Date(d.Year, 0, 1),
       Name: d.Name,
       Step: d.Step,
