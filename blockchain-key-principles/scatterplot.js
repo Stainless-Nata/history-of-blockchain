@@ -28,7 +28,7 @@ Promise.all([
       Year: new Date(d.Year, 0, 1),
       Name: d.Name,
       Step: d.Step,
-      Count: +d.Count,
+      // Count: +d.Count,
       Type: d.Type,
     }))
     .then(raw_data => {

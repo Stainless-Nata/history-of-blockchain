@@ -3,7 +3,11 @@
 Light beige (background): #f1e8dc,
 Dark beige (circles and active step of article): #e0d0ba
 Dark grey (intro text): #383737;
+
 */
+/* Possible colors */
+/* background-color: #c0ac92; */
+/* background-color: #e0d0ba; */
 
 /* intro */
 
@@ -42,8 +46,6 @@ Dark grey (intro text): #383737;
 /* body */
 body {
   font-family: 'Noto Sans Mono', monospace;
-  /* background-color: #c0ac92; */
-  /* background-color: #e0d0ba; */
   background-color: #f1e8dc;
 }
 /* scrolly */
@@ -96,7 +98,9 @@ article {
   color: black;
   opacity: 0;
 }
-
+svg {
+  height: 90vh;
+}
 .step {
   margin: 1rem auto 1rem auto;
   padding: 2rem 2rem;
@@ -260,6 +264,9 @@ a {
     padding: 1rem 1rem;
     max-width: 30rem;
   }
+  /* #sticky-chart{
+    height: 100%;
+  } */
 }
 @media (max-width: 700px) {
   #intro-dek {
@@ -272,5 +279,24 @@ a {
     position: relative;
     padding: 1rem 1rem;
     max-width: 20rem;
+  }
+  /* #sticky-chart{
+  height: 100%
+  } */
+}
+@media (max-width: 400px) {
+  #intro-dek {
+    margin: 2rem auto;
+  }
+  #intro-bitcoin {
+    padding: 5% 3% 5% 3%;
+  }
+  article {
+    position: relative;
+    padding: 1rem 1rem;
+    max-width: 20rem;
+  }
+  svg {
+    height: 90vh;
   }
 }
