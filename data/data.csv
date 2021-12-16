@@ -1,18 +1,18 @@
-Count,Type,Name,Step,Year
-1,Cryptography,Ancient Times,1,1920
-2,Cryptography,Wartime,2,1950
-3,Cryptography,RSA,3,1977
-4,Cryptography,PGP,4,1991
-1,Open-source software,"""The Printer Story""",5,1980
-2,Open-source software,GNU,6,1983
-3,Open-source software,Linux,7,1991
-4,Open-source software,GitHub,8,2008
-1,Decentralization,ARPA,9,1957
-2,Decentralization,Internet,10,1990
-3,Decentralization,Centralization,11,1999
-4,Decentralization,BitTorrent,12,2001
-5,Digital Money,DigiCash,13,1989
-5,Digital Money,HashCash,14,1997
-5,Digital Money,Bit Gold,15,1998
-5,Digital Money,B-money,16,1998
-5,Digital Money,Bitcoin,17,2009
+Type,Name,Step,Year
+Cryptography,Ancient Times,1,1920
+Cryptography,Wartime,2,1950
+Cryptography,RSA,3,1977
+Cryptography,PGP,4,1991
+Open-source software,"""The Printer Story""",5,1980
+Open-source software,GNU,6,1983
+Open-source software,Linux,7,1991
+Open-source software,GitHub,8,2008
+Decentralization,ARPA,9,1957
+Decentralization,Internet,10,1990
+Decentralization,Centralization,11,1999
+Decentralization,BitTorrent,12,2001
+Digital Money,DigiCash,13,1989
+Digital Money,HashCash,14,1997
+Digital Money,Bit Gold,15,1998
+Digital Money,B-money,16,1998
+Digital Money,Bitcoin,17,2009
