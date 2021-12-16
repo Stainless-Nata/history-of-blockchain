@@ -125,7 +125,15 @@ svg {
   /* padding: 0.5rem; */
   font-size: 1rem;
 }
-
+#outro {
+  max-width: 50rem;
+  margin: 1rem auto 1rem auto;
+  padding: 2rem 2rem;
+  text-align: left;
+  /* height: 100vh; */
+  color: #383737;
+  background-color: #e0d0ba;
+}
 /* scatterplot */
 
 .dot {
@@ -197,6 +205,17 @@ div.tooltip {
   font-weight: 900;
   text-align: center;
   padding: 3%;
+}
+.title-end {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #f1e8dc;
+  padding: 3%;
+  font-size: 40px;
+  color: #383737;
+  padding: 3%;
+  text-align: center;
 }
 .why {
   text-align: center;
