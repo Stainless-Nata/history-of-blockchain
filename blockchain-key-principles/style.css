@@ -50,7 +50,7 @@ body {
 }
 /* scrolly */
 main {
-  margin: 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
 #scrolly {
   position: relative;
