@@ -82,12 +82,16 @@ article {
   width: 100%;
   margin: 0;
   z-index: 0;
+  top: 0;
   top: 1vh;
   height: 90vh;
   /* Center everything inside */
   /* display: flex; */
   align-items: center;
   justify-content: center;
+}
+svg {
+  position: sticky;
 }
 
 .sticky-chart p {
@@ -223,10 +227,11 @@ div.tooltip {
   max-width: 300px;
 }
 .imageArpa {
-  max-width: 400px;
+  max-width: 300px;
 }
 .imageInternet {
-  max-height: 500px;
+  max-height: 400px;
+  max-width: 300px;
 }
 .arrow {
   max-width: 40px;
@@ -293,6 +298,9 @@ a {
     position: relative;
     padding: 1rem 1rem;
     max-width: 20rem;
+  }
+  .imageArpa {
+    max-width: 250px;
   }
 }
 /* @media (max-width: 400px) {
