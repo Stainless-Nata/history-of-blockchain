@@ -98,9 +98,7 @@ article {
   color: black;
   opacity: 0;
 }
-svg {
-  height: 90vh;
-}
+
 .step {
   margin: 1rem auto 1rem auto;
   padding: 2rem 2rem;
@@ -283,9 +281,6 @@ a {
     padding: 1rem 1rem;
     max-width: 30rem;
   }
-  /* #sticky-chart{
-    height: 100%;
-  } */
 }
 @media (max-width: 700px) {
   #intro-dek {
@@ -299,11 +294,8 @@ a {
     padding: 1rem 1rem;
     max-width: 20rem;
   }
-  /* #sticky-chart{
-  height: 100%
-  } */
 }
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   #intro-dek {
     margin: 2rem auto;
   }
@@ -315,7 +307,5 @@ a {
     padding: 1rem 1rem;
     max-width: 20rem;
   }
-  svg {
-    height: 90vh;
-  }
-}
+ 
+} */
