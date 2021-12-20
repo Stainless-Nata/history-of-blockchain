@@ -93,7 +93,8 @@ article {
 
 .sticky-chart p {
   height: 4rem;
-  padding: 1rem;
+  margin-bottom: 0;
+  /* padding: 1rem; */
   font-size: 22px;
   /* font-weight: 300; */
   /* color: black; */
@@ -300,7 +301,7 @@ a {
     max-width: 250px;
   }
 }
-/* @media (max-width: 400px) {
+@media (max-width: 1500px) {
   #intro-dek {
     margin: 2rem auto;
   }
@@ -310,7 +311,6 @@ a {
   article {
     position: relative;
     padding: 1rem 1rem;
-    max-width: 20rem;
+    max-width: 70rem;
   }
- 
-} */
+}
