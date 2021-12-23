@@ -134,6 +134,16 @@ article {
   color: #383737;
   background-color: #e0d0ba;
 }
+#resources {
+  max-width: 50rem;
+  margin: 2rem auto 2rem auto;
+  padding: 2rem 2rem;
+  text-align: left;
+  /* height: 100vh; */
+  color: #383737;
+  background-color: #f1e8dc;
+  font-size: 14px;
+}
 /* scatterplot */
 
 .dot {
