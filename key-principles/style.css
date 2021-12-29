@@ -248,6 +248,9 @@ div.tooltip {
   max-width: 40px;
   opacity: 0.6;
 }
+.arrow:hover {
+  color: black;
+}
 a {
   color: purple;
 }
