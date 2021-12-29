@@ -90,7 +90,10 @@ article {
   align-items: center;
   justify-content: center;
 }
-
+/* svg.banner {
+  width: 100vw;
+  height: 100vh;
+} */
 .sticky-chart p {
   height: 4rem;
   margin-bottom: 0;
@@ -269,7 +272,8 @@ a {
 }
 
 .fa:hover {
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  color: #887c6d;
 }
 .fa-linkedin {
   color: black;
