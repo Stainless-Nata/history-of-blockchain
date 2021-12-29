@@ -1,4 +1,4 @@
-# **Blockchain: Key Principles** ([in progress](https://nchikurova.github.io/history-of-blockchain/blockchain-key-principles/))
+# **Blockchain: Key Principles** ([stable link](https://nchikurova.github.io/history-of-blockchain/key-principles/))
 
 Capstone project for the MS Data Analysis & Visualization at The Graduate Center, CUNY.
 
