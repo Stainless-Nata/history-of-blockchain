@@ -51,7 +51,7 @@ The ideas explained in the Cypherpunk Manifesto became the fundamental concepts 
   
 > We must defend our own privacy if we expect to have any. We must come together and create systems which allow anonymous transactions to take place. People have been defending their own privacy for centuries with whispers, darkness, envelopes, closed doors, secret handshakes, and couriers. The technologies of the past did not allow for strong privacy, but electronic technologies do (Hughes). 
 
-### The History of Digital Money
+### The History of Digital Money (coming next)
 
 Is it a coincidence that Bitcoin was introduced the same year that the U.S. financial crisis happened? In that time many people started to reconsider the role of government and banks in the financial system, and, possibly, look for some type of alternatives. 
 
@@ -79,3 +79,14 @@ Initially, the blockchain technology was developed to improve some aspects of th
 > Reorganizing societies is of prime importance in poor countries. Wealth can be protected more effectively using the blockchain. These existential threats can be controlled by integrating land titles into the blockchain. Especially in the third world, landowners have problems to prove the ownership if for example the local government aims to expropriate the population (Nofer et. al. 183 -187).
 
 The identity verification through blockchain can also be used in the third world and by immigrants when the proof of identity is lost. The decentralized trust or trust-by-computation, ensured by proof-of-work protocol, makes presence of human intervention or controlling authority unnecessary. Atzori identifies this protocol as “a shift from trusting people to trusting math” and states that its “applicability goes far beyond the creation of decentralized digital currencies” (qtd. in Atzori 45).
+
+## Summary
+
+Blockchain is a distributed ledger that holds, records, and transmits data. Blockchain is the underlying technology which Bitcoin was built on. Even though blockchain is still relatively new technology and needs to be researched and studied to utilize its best qualities and increase its efficiency, it has already impacted many industries, such as finance, healthcare, supply chain, manufacturing, and others.
+  
+The history of underlying principles of blockchain described in this project should help us to identify the most important features of blockchain and to understand the potential of this technology, and possible impact on the future. 
+  
+Encrypted algorithms ensure the security and automated trust of the ledger, as well as the stability and immutability of the data records. Decentralization of the network provides protection, transparency, and verification of the data. Open-source nature of this software allows everyone to inspect, share and improve the code while maintaining the transparency of the data and changes on the platform. 
+  
+In addition, one of the most important features of blockchain is that this technology allows users, businesses, and industries to build applications on top of the ledger which provides countless possibilities of beneficial utilization of blockchain in the future.
+
