@@ -2,7 +2,7 @@
 
 Capstone project for the MS Data Analysis & Visualization at The CUNY Graduate Center (NYC, 2022)
 
-![](images/Screenshot_of_the_project.png with <img src="images/Screenshot_of_the_project.png" width="100")
+![](images/Screenshot_of_the_project.png with <img src="images/Screenshot_of_the_project.png" width="100" height="70")
 
 ## Abstract
   In October 2008 an unknown individual or a group of individuals under the name of Satoshi Nakomoto published a white paper [“Bitcoin: A Peer-to-Peer Electronic Cash System,”](https://nakamotoinstitute.org/bitcoin/) in which Bitcoin was described as “an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party”. 
