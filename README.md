@@ -43,3 +43,10 @@ A third possible candidate is Nick Szabo, the creator of Bit Gold, another early
   
 Besides names mentioned above, there are several more personalities that are connected to Satoshi Nakomoto’s name. However, the candidates above are the most well-known people who are related to Nakomoto and Bitcoin and all of them are members of the cypherpunk community, which leads me to the next possible extension of my project. 
 
+### The Cypherpunk Movement
+
+	The cypherpunk movement is the community that is advocating for the privacy of individuals through cryptography. This movement was founded in the early 1990s by a few scientists who started to meet regularly to discuss their work and related ideas. They also created the Cypherpunk mailing list in which many proposals and developments were discussed including the ones that later lead to Bitcoin. Eric Hughes, one of the first cypherpunks, wrote “A Cypherpunk Manifesto”, where he describes the key principle of cypherpunk movement - the importance of privacy. “Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world” (Hughes). 
+  
+  The ideas explained in the Cypherpunk Manifesto became the fundamental concepts for early attempts of developing digital currencies. The concepts presented in the Cypherpunk Manifesto are as relevant today as they were in 1993:
+  
+	> We must defend our own privacy if we expect to have any. We must come together and 	create systems which allow anonymous transactions to take place. People have been 	defending their own privacy for centuries with whispers, darkness, envelopes, closed doors, 	secret handshakes, and couriers. The technologies of the past did not allow for strong 	privacy, but electronic technologies do (Hughes). 
