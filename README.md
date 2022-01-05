@@ -1,6 +1,6 @@
 # **Blockchain: Key Principles** ([stable link](https://nchikurova.github.io/history-of-blockchain/key-principles/))
 
-Capstone project for the MS Data Analysis & Visualization at The CUNY Graduate Center (NYC, 2022)
+Capstone project for the MS Data Analysis & Visualization at The CUNY Graduate Center, 2022
 
 <img src="images/Screenshot_of_the_project.png" width=70% height=70%>
 
