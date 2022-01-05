@@ -81,6 +81,7 @@ article {
   position: sticky;
   width: 100%;
   margin: 0;
+  padding: 1.5rem 1.5rem;
   z-index: 0;
   top: 0;
   top: 1vh;
@@ -90,10 +91,7 @@ article {
   align-items: center;
   justify-content: center;
 }
-/* svg.banner {
-  width: 100vw;
-  height: 100vh;
-} */
+
 .sticky-chart p {
   height: 4rem;
   margin-bottom: 0;
@@ -248,9 +246,7 @@ div.tooltip {
   max-width: 40px;
   opacity: 0.6;
 }
-.arrow:hover {
-  color: black;
-}
+
 a {
   color: purple;
 }
@@ -318,7 +314,7 @@ a {
     max-width: 250px;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   #intro-dek {
     margin: 2rem auto;
   }
@@ -327,7 +323,10 @@ a {
   }
   article {
     position: relative;
-    padding: 1rem 1rem;
-    max-width: 70rem;
+    padding: 2rem 2rem;
+    max-width: 90rem;
+  }
+  .sticky-chart {
+    padding: 3rem 3rem;
   }
 }
