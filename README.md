@@ -94,4 +94,4 @@ Encrypted algorithms ensure the security and automated trust of the ledger, as w
   
 In addition, one of the most important features of blockchain is that this technology allows users, businesses, and industries to build applications on top of the ledger which provides countless possibilities of beneficial utilization of blockchain in the future.
 
-Full text of White Paper, list of references, and the process of creating this project you can find [here](https://drive.google.com/file/d/1zNCir-TjSX0uhM_5qYLOunSjXnHg-8ml/view?usp=sharing).
+Full text of White Paper, list of references, and the process of creating this project you can find [here](https://drive.google.com/file/d/1wlb7SnbtlBqfY09XTvh5vZCbXonXq7g6/view?usp=sharing).
