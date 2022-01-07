@@ -73,7 +73,7 @@ article {
   position: sticky;
   width: 100%;
   margin: 0;
-  padding: 1.5rem 1.5rem;
+  /* padding: 1.5rem 1.5rem; */
   z-index: 0;
   top: 0;
   top: 1vh;
@@ -289,9 +289,6 @@ a {
   .imageArpa {
     max-width: 250px;
   }
-  .sticky-chart {
-    padding: 1rem 1rem;
-  }
 }
 @media (max-width: 900px) {
   #intro-dek {
@@ -311,7 +308,7 @@ a {
   }
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1200px) {
   #intro-dek {
     margin: 2rem auto;
   }
