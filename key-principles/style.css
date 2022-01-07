@@ -4,10 +4,7 @@ Light beige (background): #f1e8dc,
 Dark beige (circles and active step of article): #e0d0ba
 Dark grey (intro text): #383737;
 
-*/
-/* Possible colors */
-/* background-color: #c0ac92; */
-/* background-color: #e0d0ba; */
+
 
 /* intro */
 
@@ -39,10 +36,6 @@ Dark grey (intro text): #383737;
   margin-bottom: 80px;
 }
 
-/* #outro {
-  height: 640px;
-} */
-
 /* body */
 body {
   font-family: 'Noto Sans Mono', monospace;
@@ -57,7 +50,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   /* padding: 1rem; */
 }
 #scrolly {
@@ -261,7 +253,6 @@ a {
 }
 /* ICONS */
 .fa {
-  /* padding: 20px; */
   width: 35px;
   height: 35px;
   text-align: center;
@@ -283,21 +274,6 @@ a {
 .fa-envelope {
   color: black;
 }
-
-@media (max-width: 900px) {
-  #intro-dek {
-    margin: 3rem auto;
-  }
-  #intro-bitcoin {
-    padding: 5% 3% 5% 3%;
-  }
-
-  article {
-    position: relative;
-    padding: 1rem 1rem;
-    max-width: 30rem;
-  }
-}
 @media (max-width: 700px) {
   #intro-dek {
     margin: 2rem auto;
@@ -313,7 +289,28 @@ a {
   .imageArpa {
     max-width: 250px;
   }
+  .sticky-chart {
+    padding: 1rem 1rem;
+  }
 }
+@media (max-width: 900px) {
+  #intro-dek {
+    margin: 3rem auto;
+  }
+  #intro-bitcoin {
+    padding: 5% 3% 5% 3%;
+  }
+
+  article {
+    position: relative;
+    padding: 1rem 1rem;
+    max-width: 30rem;
+  }
+  .sticky-chart {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
 @media (max-width: 1600px) {
   #intro-dek {
     margin: 2rem auto;

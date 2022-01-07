@@ -1,3 +1,4 @@
+// Sources used
 // youtube video: https://www.youtube.com/watch?v=d7wTA9F-l8c
 // adopted code: https://github.com/jsoma/simplified-scrollama-scrollytelling/
 
