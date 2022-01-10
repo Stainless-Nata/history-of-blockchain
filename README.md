@@ -17,7 +17,7 @@ Capstone project for the MS Data Analysis & Visualization at The CUNY Graduate C
   
   Zimmerman is the inventor of [Pretty Good Privacy](https://nakamotoinstitute.org/why-i-wrote-pgp/), which is software that provides data communication privacy through encryption (2002). While initially blockchain technology was created to improve the financial industry, the structure of blockchain, which allows users to store, validate and transmit data, provides transparency, decentralization, and trust and could also be profitable in other economic, legal, and political systems.
 
-## How it all started
+## Inspiration
 
 The idea of this capstone project came from my final project for the Alternative Data Culture course. This course aimed to explore alternative approaches to representing and understanding data, searching for hidden interpretation, and embracing subjective perspectives to generate new knowledge and create new meanings. We studied the aesthetics of text, art, digital images, and movies as objects of data visualization. One of the concepts that stood out for me was the interpretation of human thought through digital representation. In her book *SpecLab: Digital Aesthetics and Projects in Speculative Computing*, Johanna Drucker argues that code is material, and every digital piece is the presentation of human thought:
 
